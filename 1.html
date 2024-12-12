@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message_container"></div>
+    <script>
+        let random = Math.floor(Math.random() * 10)+1;
+        let message_container = document.getElementById("message_container");
+        console.log(random);
+        for(let i = 0; i < random; i++){
+            let message = document.createElement("p");
+            message.textContent = "Будьте здоровы!";
+            message_container.appendChild(message);
+        }
+    </script>
+</body>
+</html>
