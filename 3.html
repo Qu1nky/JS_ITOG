@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/3.css">
     <title>Document</title>
 </head>
 <body>
+    <div><img src="img/3.JPG" alt=""></div>
+    <div class="container">
+        <div class = "text">
+            <div for="" id="date1"></div>
+        </div>
+        <div class = "text">
+            <div for="" id="date2"></div>
+        </div>
+        <div class = "text">
+            <div for="" id="danet1"></div>
+        </div>
+        <div class = "text">
+            <div for="" id="date3"></div>
+        </div>
+        <div class = "text">
+            <div for="" id="date4"></div>
+        </div>
+        <div class = "text">
+            <div for="" id="danet2"></div>
+        </div>
+    </div>
     <script>
         function isBetween(date1, date2){
             if(!(date1 instanceof Date || !(date2 instanceof Date))){
@@ -25,6 +47,12 @@
         let date2 = new Date('2024-12-30');
         let date3 = new Date('2024-1-1');
         let date4 = new Date('2024-11-11');
+        document.getElementById('date1').textContent = date1;
+        document.getElementById('date2').textContent = date2;
+        document.getElementById('danet1').textContent = isBetween(date1, date2);
+        document.getElementById('date3').textContent = date3;
+        document.getElementById('date4').textContent = date4;
+        document.getElementById('danet2').textContent = isBetween(date3, date4);
         console.log(date1, date2);
         console.log(isBetween(date1, date2));
         console.log(date3, date4);
